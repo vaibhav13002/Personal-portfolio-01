@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Mishra - Portfolio</title>
+    <!-- Corrected stylesheet link -->
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+    <!-- Interactive Particle Background -->
+    <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-cyan-400">VaibhavMishra.</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-cyan-400 transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About</a></li>
+                <li><a href="#experience" class="hover:text-cyan-400 transition-colors duration-300">Experience</a></li>
+                <li><a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="#skills" class="hover:text-cyan-400 transition-colors duration-300">Skills</a></li>
+                <li><a href="#education" class="hover:text-cyan-400 transition-colors duration-300">Education</a></li>
+                <li><a href="#achievements" class="hover:text-cyan-400 transition-colors duration-300">Achievements</a>
+                </li>
+                <li><a href="#extracurricular" class="hover:text-cyan-400 transition-colors duration-300">Activities</a>
+                </li>
+                <li><a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="#home"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Home</a>
+                </li>
+                <li><a href="#about"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">About</a>
+                </li>
+                <li><a href="#experience"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Experience</a>
+                </li>
+                <li><a href="#projects"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Projects</a>
+                </li>
+                <li><a href="#skills"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Skills</a>
+                </li>
+                <li><a href="#education"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Education</a>
+                </li>
+                <li><a href="#achievements"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Achievements</a>
+                </li>
+                <li><a href="#extracurricular"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Activities</a>
+                </li>
+                <li><a href="#contact"
+                        class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-cyan-400">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 relative z-10">
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-start">
+            <h1 class="gsap-reveal text-5xl md:text-7xl font-bold">Hi, I'm <span class="text-cyan-400">Vaibhav
+                    Mishra</span></h1>
+            <p class="gsap-reveal mt-4 text-xl md:text-2xl text-gray-400">An Aspiring Software Developer</p>
+            <p class="gsap-reveal mt-2 max-w-2xl text-gray-500">Passionate about building scalable web apps and solving
+                real-world problems through code. Always open to connect, collaborate, and contribute!</p>
+            <div class="gsap-reveal mt-8 flex space-x-6">
+                <!-- LinkedIn Icon with Tooltip -->
+                <div class="relative group">
+                    <a href="https://www.linkedin.com/in/vaibhav-mishra-980aa7217/" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                        aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <span
+                        class="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap invisible group-hover:visible">LinkedIn</span>
+                </div>
+                <!-- GitHub Icon with Tooltip -->
+                <div class="relative group">
+                    <a href="https://github.com/vaibhav13002" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                        aria-label="GitHub Profile">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <span
+                        class="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap invisible group-hover:visible">GitHub</span>
+                </div>
+                <!-- Resume Icon with Tooltip -->
+                <div class="relative group">
+                    <a href="assets/Vaibhav_Mishra_Resume.pdf" target="_blank"
+                        class="text-gray-400 hover:text-red-500 transition-colors duration-300"
+                        aria-label="Download Resume">
+                        <i class="fas fa-file-pdf fa-2x"></i>
+                    </a>
+                    <span
+                        class="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap invisible group-hover:visible">Resume</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">About <span class="text-cyan-400">Me</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="gsap-reveal md:w-1/3">
+                    <img src="images/vaibhav.jpeg" alt="Vaibhav Mishra"
+                        class="rounded-full shadow-lg w-full max-w-sm mx-auto">
+                </div>
+                <div class="gsap-reveal md:w-2/3">
+                    <div class="space-y-4 text-gray-300">
+                        <p>🔹 Aspiring Software Developer skilled in Java, React.js, and Data Structures & Algorithms
+                            (500+ problems solved). I’ve led industrial projects like an AI-powered Image Cropping Tool
+                            and Railway Rakshak, combining deep learning and IoT for real-world impact.</p>
+                        <p>🔹 Completed an internship as a WordPress Web Developer, where I led the team, built the
+                            frontend with WooCommerce, and developed an inventory management system that enabled the
+                            company’s online sales launch.</p>
+                        <p>🔹 My academic journey includes hands-on work in Embedded C/C++, creating automated hardware
+                            projects like Smart Farming Systems and Robotic Fruit Harvesters. Currently exploring Java
+                            backend development while actively building responsive UIs with React.js.</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-6 flex-wrap">
+                        <a href="#contact"
+                            class="inline-block px-6 py-2 border-2 border-cyan-400 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300">Get
+                            In Touch</a>
+                        <div class="flex items-center space-x-6 ">
+                            <!-- LinkedIn -->
+                            <div class="relative group">
+                                <a href="https://www.linkedin.com/in/vaibhav-mishra-980aa7217/" target="_blank"
+                                    class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin fa-lg"></i>
+                                </a>
+                                <span
+                                    class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 whitespace-nowrap">LinkedIn</span>
+                            </div>
+
+                            <!-- GitHub -->
+                            <div class="relative group">
+                                <a href="https://github.com/vaibhav13002" target="_blank"
+                                    class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                                <span
+                                    class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 whitespace-nowrap">GitHub</span>
+                            </div>
+
+                            <!-- Resume -->
+                            <div class="relative group">
+                                <a href="assets/Vaibhav_Mishra_Resume.pdf" target="_blank"
+                                    class="text-gray-400 hover:text-red-500 transition-colors duration-300"
+                                    aria-label="Resume">
+                                    <i class="fas fa-file-pdf fa-lg"></i>
+                                </a>
+                                <span
+                                    class="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 whitespace-nowrap">Resume</span>
+                            </div>
+
+                            <!-- Replace the existing LeetCode and GFG links with this code -->
+                            <a href="https://leetcode.com/vaibhav_1371/" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                                aria-label="LeetCode Profile">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <img src="https://leetcode.com/favicon.ico" alt="LeetCode"
+                                        class="w-7 h-6 opacity-80 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0" />
+                                </div>
+                            </a>
+
+                            <a href="https://auth.geeksforgeeks.org/user/vaibhav13002" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                                aria-label="GeeksForGeeks Profile">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <img src="images/gfg logo.png" alt="GeeksForGeeks"
+                                        class="w-7 h-6 opacity-80 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-16">Professional <span
+                    class="text-cyan-400">Experience</span></h2>
+            <div class="max-w-3xl mx-auto relative">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-gray-700 timeline-line"></div>
+                <!-- Experience Item 1 -->
+                <div class="gsap-timeline-item mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
+                        <i class="fas fa-briefcase mx-auto text-white text-sm"></i>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="text-sm text-gray-400">July 2024 - Feb 2025</p>
+                        <h3 class="font-bold text-lg mb-1">Product Engineer</h3>
+                        <h4 class="font-semibold text-md text-cyan-300 mb-2">Frootle India Private Limited | Mumbai, IN
+                        </h4>
+                        <ul class="list-disc list-inside text-sm leading-snug tracking-wide text-gray-400">
+                            <li>Resolved 2,400+ support tickets for Ecovacs Robot Vacuum Cleaners.</li>
+                            <li>Diagnosed software bugs and guided sensor-level hardware checks.</li>
+                            <li>Directed technicians, managed inventory, and optimized operations.</li>
+                            <li>Achieved 95%+ customer satisfaction rate.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience Item 2 -->
+                <div
+                    class="gsap-timeline-item mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-8 h-8 rounded-full">
+                        <i class="fas fa-briefcase mx-auto text-white text-sm"></i>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="text-sm text-gray-400">June 2022 - Dec 2022</p>
+                        <h3 class="font-bold text-lg mb-1">Wordpress Web Developer</h3>
+                        <h4 class="font-semibold text-md text-cyan-300 mb-2">Aarbee Aqua private limited | Mumbai, IN
+                        </h4>
+                        <ul class="list-disc list-inside text-sm leading-snug tracking-wide text-gray-400">
+                            <li>Led end-to-end website development, boosting user engagement by 30%.</li>
+                            <li>Imported 20+ products, streamlining the inventory process.</li>
+                            <li>Developed an integrated inventory management system, reducing order processing time by
+                                25%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">My <span class="text-cyan-400">Projects</span>
+            </h2>
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-20">
+                <!-- Project 1 -->
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group">
+                    <div class="relative w-full h-48 project-image-slider shrink-0">
+                        <img src="images/project1/img1.png" alt="Project 1 Image 1"
+                            class="project-image w-full h-full object-cover absolute opacity-100 transition-opacity duration-300">
+                        <img src="images/project1/img2.png" alt="Project 1 Image 1"
+                            class="project-image w-full h-full object-cover absolute opacity-100 transition-opacity duration-300">
+                        <img src="images/project1/img3.png" alt="Project 1 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Shoes Sales Dashboard </h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Developed a full-stack analytics dashboard using React,
+                            Node.js, Express, and MongoDB Atlas. Visualized sales and marketing data with interactive
+                            charts, and included advanced insights like ROI and product-wise sales. Deployed via Render
+                            (backend) and Vercel (frontend).</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://infy-assg1.vercel.app/" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/InfyAssg1" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/project2/img1.png" alt="Project 2 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project2/img4.png" alt="Project 2 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project2/img3.png" alt="Project 2 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project2/img2.png" alt="Project 2 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Image Croping</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Built an intelligent image cropping tool using Python,
+                            Flask, and OpenCV that auto-detects subjects (even with obscured faces) and crops images to
+                            predefined or custom dimensions. Used SQLite for data storage.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://image-croping-1.onrender.com/" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/Image-Croping" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg group">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/project3/img1.png" alt="Project 3 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project3/img2.png" alt="Project 3 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project3/img3.png" alt="Project 3 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project3/img4.png" alt="Project 3 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">AI Image Enhancer</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Developed a responsive React app to enhance
+                            user-uploaded images using AI and display random images via public APIs. Used Tailwind CSS
+                            for UI, React Hooks for state management, and React Router for smooth navigation. Built with
+                            reusable components and scalable code structure.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://f36ce252-8bb8-4eb2-a557-786f5a087f99-00-1lfmor3fufukj.sisko.replit.dev/"
+                                target="_blank" class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/Ai-image-EnhancerAndGenerator" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hidden Projects -->
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hidden group space-y-4">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/project4/img1.jpeg" alt="Project 4 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project4/img2.jpg" alt="Project 4 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project4/img3.png" alt="Project 4 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project4/img4.png" alt="Project 3 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col ">
+                        <h3 class="text-2xl font-bold mb-2">Railway Rakshak</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Designed a switch-based spectrum licensing system using
+                            ESP32-4G LTE to transmit track data. Integrated real-time updates and alerts via Firebase
+                            and Android app. Included SMS-based auto device updates, recharge validity checks, and train
+                            status alerts with LED and sound notifications.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://github.com/vaibhav13002/Train-Industrial-Project" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/Train-Industrial-Project" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hidden group">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/project5/img1.png" alt="Project 6 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project5/img2.png" alt="Project 6 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project5/img3.png" alt="Project 3 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">The Pig Game</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">A two-player dice game built using HTML, CSS, and
+                            JavaScript. Players take turns rolling a dice to accumulate points, but rolling a 1 resets
+                            the turn.
+                            Includes interactive UI, real-time score updates, and a responsive design for smooth
+                            gameplay.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://the-pig-game-chi.vercel.app/" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/The-Pig-Game" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hidden group">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/project6/img1.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6/img3.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img4.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img5.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img6.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img7.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img8.png" alt="Project 5 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/project6//img9.png" alt="Project 3 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Face Recognition Based Attendance System</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Developed an automated attendance system using OpenCV
+                            and a trained Haarcascade model to detect and recognize student faces with over 90%
+                            accuracy. Integrated a Tkinter-based GUI for easy registration and daily attendance, with
+                            automatic CSV generation for student details and attendance logs.</p>
+                        <!-- <p style="color: #06b6d4;"><strong>Tech Stack:</strong> Python, Tkinter, OpenCV, CSV, NumPy,
+                            Pandas, datetime</p> -->
+
+
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://github.com/vaibhav13002/Face_recog_based_Attendance_System" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/Face_recog_based_Attendance_System" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hidden group">
+                    <div class="relative w-full h-48 project-image-slider">
+                        <img src="images/Bankist/img2.png" alt="Project 7 Image 1"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-100">
+                        <img src="images/Bankist/img1.png" alt="Project 3 Image 2"
+                            class="project-image w-full h-full object-cover absolute transition-opacity duration-300 ease-in-out opacity-0">
+                        <button
+                            class="slider-btn prev-btn absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&lt;</button>
+                        <button
+                            class="slider-btn next-btn absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity">&gt;</button>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Bankist</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">A clean and minimalist banking interface that simulates
+                            core banking operations. Implemented with vanilla JavaScript to handle money transfers,
+                            loans, and account management with real-time balance updates and transaction tracking.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <a href="https://bankist-eight-teal.vercel.app/" target="_blank"
+                                class="text-cyan-400 hover:underline">Live Link</a>
+                            <a href="https://github.com/vaibhav13002/Bankist.git" target="_blank"
+                                class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                    class="fab fa-github fa-lg mr-2"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-20">
+                <button id="toggle-projects-btn"
+                    class="px-8 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all duration-300">
+                    Show More
+                </button>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">Technical <span
+                    class="text-cyan-400">Skills</span></h2>
+            <div class="max-w-6xl mx-auto space-y-8">
+                <!-- Languages -->
+                <div class="gsap-reveal">
+                    <h3 class="font-bold text-xl text-cyan-300 mb-4 text-center">Languages</h3>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-java text-2xl text-orange-400"></i><span>Java</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-js-square text-2xl text-yellow-400"></i><span>JavaScript</span></div>
+<!-- C++ Skill Card -->
+<div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3">
+    <img src="images/c++ logo.png" 
+         alt="C++" 
+         class="w-6 h-6 object-contain"
+         style="filter: brightness(0.9)">
+    <span>Embedded C/C++</span>
+</div>
+                    </div>
+                </div>
+                <!-- Development -->
+                <div class="gsap-reveal">
+                    <h3 class="font-bold text-xl text-cyan-300 mb-4 text-center">Development</h3>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-html5 text-2xl text-orange-500"></i><span>HTML</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-css3-alt text-2xl text-blue-500"></i><span>CSS</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-react text-2xl text-cyan-400"></i><span>React.js</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-node-js text-2xl text-green-500"></i><span>Node.js</span></div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="gsap-reveal">
+                    <h3 class="font-bold text-xl text-cyan-300 mb-4 text-center">Tools</h3>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><svg role="img"
+                                class="w-6 h-6" fill="#007ACC" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.27.21L.21 7.654A1 1 0 0 0 .447 9.1l5.05 4.225-5.05 4.225a1 1 0 0 0-.237 1.445l1.443 1.436a.999.999 0 0 0 1.27.21l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.378A1.5 1.5 0 0 0 24 19.5V4.5a1.5 1.5 0 0 0-.85-1.913zM16.92 19.5l-9.94-9L16.92 1.5l3.51 1.68v14.64l-3.51 1.68z" />
+                            </svg><span>VS Code</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-linux text-2xl"></i><span>Linux/UNIX</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fas fa-terminal text-xl"></i><span>Terminal</span></div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><i
+                                class="fab fa-git-alt text-2xl text-orange-600"></i><span>Git/Github</span></div>
+<div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3">
+    <img src="images/canva logo.png" 
+         alt="Canva" 
+         class="w-6 h-6 object-contain"
+         style="filter: brightness(0.9)">
+    <span>Canva</span>
+</div>
+                        <div class="skill-card flex items-center bg-gray-800 py-2 px-4 rounded-lg gap-3"><svg role="img"
+                                class="w-6 h-6" fill="#008080" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.263 3.594l-5.32 11.12-1.32-2.754H5.1l3.86 8.448h1.8l5.32-11.12 1.32 2.754h1.52l-3.86-8.448z" />
+                            </svg><span>Latex</span></div>
+                    </div>
+                </div>
+                <!-- Core Concepts -->
+                <div class="gsap-reveal">
+                    <h3 class="font-bold text-xl text-cyan-300 mb-4 text-center">Core Concepts</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <span class="bg-gray-700 py-2 px-4 rounded-lg">Object-Oriented Programming (OOPs)</span>
+                        <span class="bg-gray-700 py-2 px-4 rounded-lg">Data Structures and Algorithms</span>
+                        <span class="bg-gray-700 py-2 px-4 rounded-lg">Software Testing</span>
+                        <span class="bg-gray-700 py-2 px-4 rounded-lg">Debugging</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">My <span class="text-cyan-400">Education</span>
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="gsap-reveal bg-gray-800 p-6 rounded-lg">
+                    <p class="text-sm text-gray-400">Aug 2020 - Jul 2024</p>
+                    <h3 class="font-bold text-xl mb-1">Vidyavardhini's College of Engineering and Technology</h3>
+                    <p class="text-cyan-300 mb-2">Bachelor of Engineering - BE, Electronics and Telecommunication</p>
+                    <p class="text-gray-400">Grade: 8.4 CGPA</p>
+                </div>
+                <div class="gsap-reveal bg-gray-800 p-6 rounded-lg">
+                    <p class="text-sm text-gray-400">Jun 2017 - May 2020</p>
+                    <h3 class="font-bold text-xl mb-1">Expert's International Junior college</h3>
+                    <p class="text-cyan-300 mb-2">Class XI and XII, Science | Mumbai, Maharashtra</p>
+                    <p class="text-gray-400">Grade: A</p>
+                </div>
+                <div class="gsap-reveal bg-gray-800 p-6 rounded-lg">
+                    <p class="text-sm text-gray-400">April 2014 - May 2017</p>
+                    <h3 class="font-bold text-xl mb-1">Rahul International School (CBSE)</h3>
+                    <p class="text-cyan-300 mb-2">Mumbai, Maharashtra</p>
+                    <p class="text-gray-400">Grade: 7.6 CGPA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">My <span
+                    class="text-cyan-400">Achievements</span></h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- GeeksforGeeks Achievement -->
+                <div
+                    class="gsap-reveal bg-gray-800 p-6 rounded-lg flex items-center gap-6 group hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-laptop-code text-3xl text-cyan-400"></i>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl">Geeks for Geeks Ranking</h3>
+                        <p class="text-gray-400">Ranked 9 out of 740+ registered geeks on GFG.</p>
+                        <a href="https://auth.geeksforgeeks.org/user/vaibhav13002" target="_blank"
+                            class="mt-2 inline-flex items-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Profile <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LeetCode Achievement -->
+                <div
+                    class="gsap-reveal bg-gray-800 p-6 rounded-lg flex items-center gap-4 group hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-keyboard text-3xl text-cyan-400"></i>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl">Leetcode Accomplishments</h3>
+                        <p class="text-gray-400">Solved 500+ Data Structures and Algorithms problems in Java across
+                            platforms like LeetCode and GFG.</p>
+                        <a href="https://leetcode.com/vaibhav_1371/" target="_blank"
+                            class="mt-2 inline-flex items-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Profile <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Technical Paper Achievement -->
+                <div
+                    class="gsap-reveal bg-gray-800 p-6 rounded-lg flex items-center gap-4 group hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-trophy text-3xl text-cyan-400"></i>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl">Technical Paper Presentation</h3>
+                        <p class="text-gray-400">Achieved 2nd Rank in Oscillation-VCET.</p>
+                        <a href="https://drive.google.com/your-certificate-link" target="_blank"
+                            class="mt-2 inline-flex items-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Certificate <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- LeetCode contest and badges -->
+                <div
+                    class="gsap-reveal bg-gray-800 p-6 rounded-lg flex items-center gap-4 group hover:bg-gray-700 transition-all duration-300">
+                    <i class="fas fa-award text-3xl text-cyan-400"></i>
+                    <div class="flex-grow">
+                        <h3 class="font-bold text-xl">Leetcode Accomplishments</h3>
+                        <p class="text-gray-400">Earned 7 LeetCode badges with a peak contest rating of 1535 across 8
+                            contests.</p>
+                        <a href="https://leetcode.com/vaibhav_1371/" target="_blank"
+                            class="mt-2 inline-flex items-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Profile <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extracurricular Activities Section -->
+        <section id="extracurricular" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">Extracurricular <span
+                    class="text-cyan-400">Activities</span></h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="gsap-reveal bg-gray-800 p-6 rounded-lg">
+                    <p class="text-sm text-gray-400">Jul 2022 - Sep 2023 · 1 yr 3 mos</p>
+                    <h3 class="font-bold text-xl mb-1">Managing Head</h3>
+                    <p class="text-cyan-300 mb-2">IEEE SB - VCET | Vasai, Maharashtra, India</p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Organized many events (think aloud, stem project, Anveshan, VNPS etc), hackathons and
+                            speaker sessions.</li>
+                        <li>Visited local schools to provide engaging STEM education programs to students.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1fPMdAnyaanCmXJOPnOug3GFd3WkBI-6J?usp=sharing"
+                        target="_blank" class="inline-block mt-4 text-cyan-400 hover:underline"><i
+                            class="fas fa-images mr-2"></i>View Event Gallery</a>
+                </div>
+                <div class="gsap-reveal bg-gray-800 p-6 rounded-lg">
+                    <p class="text-sm text-gray-400">Jul 2022 - Jun 2024 · 2 yrs</p>
+                    <h3 class="font-bold text-xl mb-1">Technical Head</h3>
+                    <p class="text-cyan-300 mb-2">VCET Texas Instruments Innovation Lab | Vasai, Maharashtra, India</p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Conducted many sessions like Robotics, Organized many events.</li>
+                    </ul>
+                    <a href="https://www.instagram.com/reel/CjdSCgnJnNV/?igsh=ZGJxdGppOGhzcXRj" target="_blank"
+                        class="inline-block mt-4 text-cyan-400 hover:underline"><i class="fas fa-images mr-2"></i>View
+                        Workshop Photos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="gsap-reveal text-4xl font-bold text-center mb-12">Contact <span class="text-cyan-400">Me</span>
+            </h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="gsap-reveal text-gray-400 mb-8">I'm currently open to new opportunities. Feel free to reach
+                    out if you have a question or just want to say hi. I'll get back to you!</p>
+                <a href="mailto:vaibhavmishra.bs@gmail.com"
+                    class="gsap-reveal inline-block text-2xl text-cyan-400 font-semibold hover:underline">vaibhavmishra.bs@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 py-6 relative z-10">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/vaibhav-mishra-980aa7217/" target="_blank"
+                    class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                    aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/vaibhav13002" target="_blank"
+                    class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                    aria-label="GitHub Profile">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="assets/Vaibhav_Mishra_Resume.pdf" target="_blank"
+                    class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                    aria-label="Download Resume">
+                    <i class="fas fa-file-pdf fa-2x"></i>
+                </a>
+                <!-- LeetCode Icon with Tooltip -->
+                <a href="https://leetcode.com/vaibhav_1371/" target="_blank" class="relative group"
+                    aria-label="LeetCode Profile">
+                    <img src="https://leetcode.com/favicon.ico" alt="LeetCode"
+                        class="w-8 h-8 opacity-80 hover:opacity-100 transition-all duration-300"
+                        style="filter: grayscale(100%) brightness(150%); transition: filter 0.3s;">
+                    <style>
+                        .group:hover img {
+                            filter: grayscale(0%) brightness(100%) !important;
+                        }
+                    </style>
+                </a>
+                <a href="https://auth.geeksforgeeks.org/user/vaibhav13002" target="_blank" class="relative group"
+                    aria-label="GeeksforGeeks Profile">
+                    <img src="images/gfg logo.png" alt="GeeksforGeeks"
+                        class="w-8.5 h-10 opacity-80 hover:opacity-100 transition-all duration-300"
+                        style="filter: grayscale(100%) brightness(150%); transition: filter 0.3s;">
+                    <style>
+                        .group:hover img {
+                            filter: grayscale(0%) brightness(100%) !important;
+                        }
+                    </style>
+                </a>
+            </div>
+            <p>&copy; 2025 Vaibhav Mishra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Particles.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Your Custom Script (Corrected Path) -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
