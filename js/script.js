@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     sections.forEach(section => {
-        observer.observe(section);
+        observer.observe(section);   // “Observer! In sab sections ko track karo, jab bhi koi bhi section viewport me dikhne lage, mujhe callback me batana.”
     });
     
     highlightNavLinks('home');
